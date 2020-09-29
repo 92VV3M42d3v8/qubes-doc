@@ -16,7 +16,7 @@ redirect_from:
 The Minimal [TemplateVMs] are lightweight versions of their standard TemplateVM counterparts.
 They have only the most vital packages installed, including a minimal X and xterm installation.
 The sections below contain instructions for using the template and provide some examples for common use cases.
-There are currently three Minimal TemplateVMs corresponding to the standard [Fedora], [Debian] and [CentOS] TemplateVMs.
+There are currently three Minimal TemplateVMs corresponding to the standard [Fedora], [Debian], [CentOS] and [Gentoo] TemplateVMs.
 
 
 ## Important
@@ -116,7 +116,7 @@ Also, there are packages to provide additional services:
 - `qubes-pdf-converter`: For implementing safe conversion of PDFs.
 - `qubes-img-converter`: For implementing safe conversion of images.
 - `qubes-snapd-helper`: If you want to use snaps in qubes.
-- `qubes-thunderbird`: Additional tools for use in thunderbird.
+- `thunderbird-qubes`: Additional tools for use in thunderbird.
 - `qubes-app-shutdown-idle`: If you want qubes to automatically shutdown when idle.
 - `qubes-mgmt-salt-vm-connector`: If you want to use salt management on the template and qubes.
 
@@ -216,6 +216,7 @@ You could, of course, use `qubes-vm-recommended` to automatically install many o
 [Fedora]: /doc/templates/fedora/
 [Debian]: /doc/templates/debian/
 [CentOS]: /doc/templates/centos/
+[Gentoo]: /doc/templates/gentoo/
 [Help, Support, Mailing Lists, and Forum]: /support/
 [doc-guidelines]: /doc/doc-guidelines/
 [pref-default]: /faq/#could-you-please-make-my-preference-the-default

@@ -62,6 +62,8 @@ In addition, these templates may be somewhat less stable, since the Qubes develo
  * [Arch Linux]
  * [CentOS]
  * [CentOS Minimal]
+ * [Gentoo]
+ * [Gentoo Minimal]
 
 ## Installing
 
@@ -79,6 +81,11 @@ Usually, the installation method is to execute the following type of command in 
     $ sudo qubes-dom0-update qubes-template-<name>
 
 where `qubes-template-<name>` is the name of your TemplateVM package.
+
+If you wish to install a community template, you must enable the community template repo:
+
+    $ sudo qubes-dom0-update --enablerepo=qubes-templates-community qubes-template-<name>
+
 If you receive the message that no match is found for `qubes-template-<name>`, see [here][no-match].
 
 ## After Installing
@@ -264,6 +271,8 @@ Note the word "clean" means in this context: the same as their template filesyst
 [Arch Linux]: /doc/building-archlinux-template/
 [CentOS]: /doc/templates/centos/
 [CentOS Minimal]: /doc/templates/minimal/
+[Gentoo]: /doc/templates/gentoo/
+[Gentoo Minimal]: /doc/templates/minimal/
 [Qubes Builder]: /doc/qubes-builder/
 [TemplateVM Implementation]: /doc/template-implementation/
 [How to Remove VMs Manually]: /doc/remove-vm-manually/
